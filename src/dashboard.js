@@ -40,6 +40,8 @@ async function handlePost(state) {
   }).then(result => {
     console.log(result);
     alert('Pokemon Added!');
+  }).then(() => {
+    window.location.reload();
   });
 }
 
@@ -59,6 +61,8 @@ async function handleDelete(state) {
     alert('Pokemon Deleted!');
   }, error => {
     alert('Error: ' + error);
+  }).then(() => {
+    window.location.reload();
   });
 }
 
