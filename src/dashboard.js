@@ -9,7 +9,7 @@ import TextField from '@material-ui/core/TextField';
 
 function isInt(value) {
   return !isNaN(value)
-      && parseInt(Number(value)) === value
+      && parseInt(Number(value)) == value
       && !isNaN(parseInt(value, 10));
 }
 
